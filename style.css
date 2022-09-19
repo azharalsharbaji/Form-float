@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(150deg,#464dac,#070707);
+    height: 100vh;
+    width: 100%;
+}
+
+div.container-wrapper
+{
+    width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding-right: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 310px #040a13;
+}
+div.container-wrapper h1
+{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+}
+img.img-responsive
+{
+    max-width: 410px;
+    float: left;
+    margin-right: 5%;
+}
+form *:not(input[type="submit"])
+{
+    display: block;
+    margin: 10px;
+    color: #3a2b2b;
+
+}
+input:not(input[type="submit"]), select
+{
+    width: 35%;  
+    padding: 2%;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #dbc7c7;
+    outline: none;
+}
+select
+{
+    width: 39%;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>')
+  }
+input[type="submit"]
+{
+    width: 40%;
+    padding: 1.5%;
+    margin-top: 3%;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid linear-gradient(150deg,#464dac,#070707);
+    background: linear-gradient(150deg,#464dac,#070707);
+    cursor: pointer;
+}
+input[type="submit"]:hover
+{
+        border: 1px solid linear-gradient(-150deg,#464dac,#000000);
+     background: linear-gradient(-140deg,#464dac,#000000);
+}
