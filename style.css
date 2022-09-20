@@ -5,12 +5,11 @@
 body
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-clip: border-box;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(150deg,#464dac,#070707);
-    height: 100vh;
-    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: linear-gradient(150deg,#020344,#28b8d5);
+    
+
 }
 
 div.container-wrapper
@@ -19,8 +18,8 @@ div.container-wrapper
     overflow: hidden;
     margin: 20px auto;
     padding-right: 20px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 310px #040a13;
+    background-color: #082135;
+    box-shadow: 0px 0px 30px #09374d;
 }
 div.container-wrapper h1
 {
@@ -36,12 +35,16 @@ img.img-responsive
     float: left;
     margin-right: 5%;
 }
-form *:not(input[type="submit"])
+form *:not(input[type="submit"],select)
 {
     display: block;
     margin: 10px;
-    color: #3a2b2b;
+    color: #fcfcfc;
 
+}
+::placeholder
+{
+    color: #8098ac;
 }
 input:not(input[type="submit"]), select
 {
@@ -49,16 +52,23 @@ input:not(input[type="submit"]), select
     padding: 2%;
     font-size: 16px;
     font-weight: 500;
-    background: none;
+    background: transparent;
     border: none;
     border-bottom: 1px solid #dbc7c7;
     outline: none;
 }
 select
 {
+    color: #817a7a;
+    background-color: #082135;
     width: 39%;
 }
+::selection{ color: #867f7f;}
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>')
+  }
+  ::-moz-calendar-picker-indicator
+  {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>')
   }
 input[type="submit"]
@@ -68,12 +78,13 @@ input[type="submit"]
     margin-top: 3%;
     color: #fff;
     font-size: 18px;
-    border: 1px solid linear-gradient(150deg,#464dac,#070707);
-    background: linear-gradient(150deg,#464dac,#070707);
+    border: none;
+    background-image: linear-gradient(150deg,#020344,#28b8d5);
     cursor: pointer;
 }
 input[type="submit"]:hover
 {
-        border: 1px solid linear-gradient(-150deg,#464dac,#000000);
-     background: linear-gradient(-140deg,#464dac,#000000);
+        border: none;
+     background: linear-gradient(-150deg,#020344,#28b8d5);;
 }
+
